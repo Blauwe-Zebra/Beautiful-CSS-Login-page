@@ -13,8 +13,83 @@ body {
 }
 
 main {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/Assets/Background.jpg);
     background-size: cover;
+    color: white;
+    text-align: center;
 }
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+    height: 80%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.content input {
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    border: 1px solid black;
+}
+
+.content h1 {
+    margin-bottom: 7%;
+}
+
+.content form {
+    text-align: left;
+}
+
+.content input {
+    width: 100%;
+}
+
+#Username {
+    margin-bottom: 5%;
+}
+
+.content .ForgotPwd, .content .ForgotPwd:visited {
+    text-align: right;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: rgb(88, 88, 255);
+}
+
+.content .ForgotPwd:hover {
+    text-decoration: underline;
+} 
+
+.content button {
+    margin: 7% auto 5% auto;
+    display: flex;
+    border: 0;
+    width: 70%;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+    justify-content: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.885);
+    font-size: 1.3rem;
+    overflow: hidden;
+    border: white 1px solid;
+}
+
+.content button:hover, .content button:active {
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 1s;
+    color: white;
+}
+
