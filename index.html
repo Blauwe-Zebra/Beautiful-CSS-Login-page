@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="container Login" style="display: none">
         <h1>Login</h1>
         <form action="">
           <label for="Username">Username</label><br />
@@ -46,6 +46,65 @@
             <span>Sign up</span></a
           >
         </h5>
+      </div>
+      <div class="container SignUp">
+        <h1>Create profile</h1>
+        <form action="">
+          <label for="FirstnameSU">Firstname</label>
+          <input
+            type="text"
+            name="FirstnameSU"
+            id="FirstnameSU"
+            autocapitalize="on"
+            autocomplete="on"
+            placeholder="Firstname"
+          />
+
+          <label for="LastnameSU">Lastname</label>
+          <input
+            type="text"
+            name="LastnameSU"
+            id="LastnameSU"
+            autocapitalize="on"
+            autocomplete="on"
+            placeholder="Lastname"
+          />
+
+          <label for="UsernameSU">Username</label>
+          <input
+            type="text"
+            name="UsernameSU"
+            id="UsernameSU"
+            autocapitalize="on"
+            autocomplete="on"
+            placeholder="Username"
+          />
+
+          <label for="mailSU">mail</label>
+          <input
+            type="email"
+            name="mailSU"
+            id="mailSU"
+            autocapitalize="mail"
+            placeholder="mail"
+          />
+
+          <label for="PasswordSU">Password</label>
+          <input
+            type="password"
+            name="PasswordSU"
+            id="PasswordSU"
+            placeholder="Enter your password"
+          />
+
+          <label for="RpasswordSU">Repeat password</label>
+          <input
+            type="password"
+            name="RpasswordSU"
+            id="RpasswordSU"
+            placeholder="Repeat your password"
+          />
+        </form>
       </div>
     </main>
   </body>
