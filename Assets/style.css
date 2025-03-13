@@ -65,11 +65,18 @@ form input:active,
 form input:focus {
   outline: none;
   background-color: rgb(189, 189, 189);
+  transform: scaley(1.1);
 }
 
 .ForgotPwd {
   text-align: right;
   margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.ForgotPwd a,
+.ForgotPwd a:visited {
+  color: white;
 }
 
 .SubminBTN {
@@ -83,7 +90,7 @@ form button {
   border-radius: 10px;
   background-color: rgb(0, 132, 255);
   color: white;
-  width: 90%;
+  width: 100%;
 }
 
 form button:hover {
@@ -91,4 +98,17 @@ form button:hover {
   transition: all 0.3s;
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.SignUp {
+  margin-top: 10px;
+}
+
+.SignUp span {
+}
+
+.SignUp a,
+.SignUp a:visited {
+  text-decoration: none;
+  color: white;
 }
