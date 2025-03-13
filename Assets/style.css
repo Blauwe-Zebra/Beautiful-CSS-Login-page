@@ -57,10 +57,19 @@ form input {
   outline: none;
 }
 
+form input:nth-child(even) {
+  margin-bottom: 0;
+}
+
 form input:active,
 form input:focus {
   outline: none;
   background-color: rgb(189, 189, 189);
+}
+
+.ForgotPwd {
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 .SubminBTN {
