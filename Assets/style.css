@@ -114,3 +114,9 @@ form button:hover {
   text-decoration: none;
   color: white;
 }
+
+/* Sign up Account */
+.SignUp input {
+  margin: 0;
+  margin-bottom: 15px !important;
+}

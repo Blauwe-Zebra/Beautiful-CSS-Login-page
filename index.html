@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <div class="container Login" style="display: none">
+      <div class="container Login" id="Login">
         <h1>Login</h1>
         <form action="">
           <label for="Username">Username</label><br />
@@ -21,6 +21,7 @@
             placeholder="Enter your username..."
             autocomplete="on"
             autocapitalize="on"
+            required
           />
 
           <label for="Password">Password</label><br />
@@ -30,6 +31,7 @@
             id="Password"
             placeholder="Enter your password"
             autocomplete="off"
+            required
           />
           <div class="ForgotPwd">
             <a href="#ForgotPWD">Forgot Password</a>
@@ -41,13 +43,13 @@
         </form>
         <hr style="width: 80%" />
         <h5 class="SignUp">
-          <a href="#CreateAccount"
+          <a href="#CreateAccount" onclick="Login()"
             >Or if you don't have a account<!-- &#x2022;-->
-            <span>Sign up</span></a
-          >
+            <span>Sign up</span>
+          </a>
         </h5>
       </div>
-      <div class="container SignUp">
+      <div class="container SignUp" id="SignUp" style="display: none">
         <h1>Create profile</h1>
         <form action="">
           <label for="FirstnameSU">Firstname</label>
@@ -57,7 +59,8 @@
             id="FirstnameSU"
             autocapitalize="on"
             autocomplete="on"
-            placeholder="Firstname"
+            placeholder="Enter your firstname"
+            required
           />
 
           <label for="LastnameSU">Lastname</label>
@@ -67,7 +70,8 @@
             id="LastnameSU"
             autocapitalize="on"
             autocomplete="on"
-            placeholder="Lastname"
+            placeholder="Enter your lastname"
+            required
           />
 
           <label for="UsernameSU">Username</label>
@@ -77,8 +81,9 @@
             id="UsernameSU"
             autocapitalize="on"
             autocomplete="on"
-            placeholder="Username"
-          />
+            placeholder="Enter your username"
+            required
+          /><br /><br />
 
           <label for="mailSU">mail</label>
           <input
@@ -86,7 +91,8 @@
             name="mailSU"
             id="mailSU"
             autocapitalize="mail"
-            placeholder="mail"
+            placeholder="Enter your E-mail"
+            required
           />
 
           <label for="PasswordSU">Password</label>
@@ -95,6 +101,7 @@
             name="PasswordSU"
             id="PasswordSU"
             placeholder="Enter your password"
+            required
           />
 
           <label for="RpasswordSU">Repeat password</label>
@@ -103,9 +110,21 @@
             name="RpasswordSU"
             id="RpasswordSU"
             placeholder="Repeat your password"
+            required
           />
+          <div class="SubminBTN">
+            <button type="submit">LOGIN</button>
+          </div>
         </form>
+        <hr style="width: 80%" />
+        <h5 class="SignUp">
+          <a href="#Login" onclick="SignUp()"
+            >Or if you already have a account<!-- &#x2022;-->
+            <span>Login</span>
+          </a>
+        </h5>
       </div>
     </main>
+    <script src="Assets/script.js"></script>
   </body>
 </html>
