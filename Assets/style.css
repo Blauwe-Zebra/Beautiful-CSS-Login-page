@@ -105,6 +105,8 @@ form button:hover {
 }
 
 .SignUp span {
+  color: rgb(113, 113, 255);
+  text-decoration: underline;
 }
 
 .SignUp a,
